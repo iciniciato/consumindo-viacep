@@ -15,7 +15,6 @@ dependencies {
 
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.1'
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '3.0.0'
-    compile group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
 
     compileOnly 'org.projectlombok:lombok:1.18.8'
     annotationProcessor 'org.projectlombok:lombok:1.18.8'

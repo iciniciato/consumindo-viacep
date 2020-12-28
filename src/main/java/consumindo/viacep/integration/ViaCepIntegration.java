@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface ViaCepIntegration {
 
     @GetMapping("{cep}/json/")
-    CepDTO buscaPeloCep(@PathVariable Integer cep);
+    CepDTO buscaPeloCep(@PathVariable("cep") Integer cep);
 
 }
 
