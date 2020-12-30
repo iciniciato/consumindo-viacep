@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 public class CepDTO {
     private String cep;
     private String logradouro;
-    private String complemente;
+    private String complemento;
     private String bairro;
     private String localidade;
     private String uf;
