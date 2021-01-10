@@ -1,0 +1,8 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+url:
+  via-cep: https://viacep.com.br/ws/
+  name: viacep
