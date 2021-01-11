@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(url = "${url.via-cep}", name = "${url.name}")
 public interface ViaCepIntegration {
 
-    @GetMapping("{cep}/json/")
+    @GetMapping("/{cep}/json/")
     CepDTO buscaPeloCep(@PathVariable("cep") Integer cep);
 
 }

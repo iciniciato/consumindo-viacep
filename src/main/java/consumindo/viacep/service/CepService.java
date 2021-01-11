@@ -17,13 +17,13 @@ public class CepService {
 
     public CepDTO getCep (Integer cep) {
         int cepSize = cep.toString().length();
-        CepDTO cepDTO = null;
+        CepDTO cepDTO;
 
         if(cepSize != 8 ){
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "CEP deve conter 8 dígitos.");
         } else {
             cepDTO = viaCepIntegration.buscaPeloCep(cep);
-            if(Objects.isNull(cepDTO.getCep())){
+            if(Objects.isNull(cepDTO) || Objects.isNull(cepDTO.getCep())){
                 throw new ResponseStatusException(HttpStatus.NOT_FOUND, "CEP não encontrado.");
             }
         }

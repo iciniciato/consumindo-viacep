@@ -4,5 +4,5 @@ server:
     include-binding-errors: always
 
 url:
-  via-cep: https://viacep.com.br/ws/
+  via-cep: https://viacep.com.br/ws
   name: viacep

@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class Cep {
 
     private final CepService cepService;
+    public static final String URL = "/cep/";
 
-    @GetMapping("/cep/{cep}")
+    @GetMapping(URL + "{cep}")
     public ResponseEntity getCep(@PathVariable Integer cep){
         return ResponseEntity.ok().body(cepService.getCep(cep));
     }
